@@ -39,7 +39,9 @@
       'use strict'
 
       // pass the port and url of the server
-      var channel = geckos({ port: 3000 })
+      var channel = geckos({
+        url: 'https://gentle-plains-87434.herokuapp.com/'
+      })
 
       var button = document.getElementById('button')
       var text = document.getElementById('text')

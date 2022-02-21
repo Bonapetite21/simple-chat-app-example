@@ -6,7 +6,7 @@ const io = geckos({
 })
 
 // listen on port 3000 (default is 9208)
-io.listen(3000)
+io.listen(process.env.PORT || 3000)
 
 io.onConnection((channel) => {
   channel.onDisconnect(() => {
